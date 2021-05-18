@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class SceneManager : MonoBehaviour
 {
+    [Header("Login")]
+    [SerializeField] private InputField loginPasswordInput = null;
+    [SerializeField] private InputField loginUserNameInput = null;
+
+    [Header("Register")]
     [SerializeField] private InputField userNameInput = null;
     [SerializeField] private InputField emailInput = null;
     [SerializeField] private InputField passwordInput = null;
@@ -18,6 +23,21 @@ public class SceneManager : MonoBehaviour
 
     private void Awake() {
         networkManager = GameObject.FindObjectOfType<NetworkManager>();
+    }
+
+    public void submitLogin() {
+
+        if (loginUserNameInput.text == "" || loginPasswordInput.text == "") {
+            debug.text = "Campos vacíos";
+            return;
+        }
+
+        debug.text = "processing...";
+
+        networkManager.checkUser(loginUserNameInput.text, loginPasswordInput.text, delegate (Response response) {
+            debug.text = response._message;
+        });
+
     }
 
     public void sumbitRegister() {

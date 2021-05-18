@@ -282,7 +282,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 245515888}
-        m_MethodName: showLogin
+        m_MethodName: submitLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -813,6 +813,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86203e2fe5431448a5712130db371dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loginPasswordInput: {fileID: 515393406}
+  loginUserNameInput: {fileID: 2008718847}
   userNameInput: {fileID: 202741891}
   emailInput: {fileID: 246505022}
   passwordInput: {fileID: 542566547}
@@ -2080,7 +2082,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1

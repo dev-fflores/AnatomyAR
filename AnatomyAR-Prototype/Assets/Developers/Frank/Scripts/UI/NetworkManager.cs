@@ -23,6 +23,22 @@ public class NetworkManager : MonoBehaviour
         response(JsonUtility.FromJson<Response>(_w.text));
     }
 
+    public void checkUser(string userName, string pass, Action<Response> response) {
+        StartCoroutine(coroutineCheckUser(userName, pass, response));
+    }
+
+    private IEnumerator coroutineCheckUser(string userName, string pass, Action<Response> response) {
+        WWWForm _form = new WWWForm();
+        _form.AddField("userName", userName);
+        _form.AddField("pass", pass);
+
+        WWW _w = new WWW("http://localhost/Anatomy_AR/checkUser.php", _form);
+
+        yield return _w;
+        Debug.Log(_w.text);
+        response(JsonUtility.FromJson<Response>(_w.text));
+    }
+
 }
 
 [Serializable]

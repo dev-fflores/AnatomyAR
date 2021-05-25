@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Developers/Frank/Scenes/LoginAndRegister.unity
+    guid: a5bf10a34273e094c8ba2b9e3ebca71c
+  - enabled: 1
+    path: Assets/Developers/Frank/Scenes/AR_Scene.unity
+    guid: f9b11c1d52d9e174e8c60209d79d45a5
   m_configObjects: {}

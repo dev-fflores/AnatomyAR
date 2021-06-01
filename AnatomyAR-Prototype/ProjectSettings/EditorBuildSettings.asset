@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Developers/Frank/Scenes/AR_Scene.unity
     guid: f9b11c1d52d9e174e8c60209d79d45a5
+  - enabled: 1
+    path: Assets/Developers/Frank/Scenes/QuizScene.unity
+    guid: f816473f0649aff46a819cc43203dbd2
   m_configObjects: {}

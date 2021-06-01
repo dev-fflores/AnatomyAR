@@ -275,8 +275,8 @@ public class GameManager : MonoBehaviour
     }
 
     public void QuitGame() {
-
-        Application.Quit();
+        SceneManager.LoadScene("AR_Scene");
+        //Application.Quit();
     }
     private void UpdateScore(int add) {
 

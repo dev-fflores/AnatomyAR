@@ -8,14 +8,14 @@ public class ChangeScene : MonoBehaviour
 {
     public Image _timeCount;
     float _currentTime = 0f;
-    private float _endTime = 30f;
+    private float _endTime = 15f;
 
     void Update() {
         _currentTime += Time.deltaTime;
         _timeCount.fillAmount = _currentTime / _endTime;
         if (_currentTime >= _endTime) 
         {
-            SceneManager.LoadScene("LoginAndRegister");
+            SceneManager.LoadScene("QuizScene");
         }
     }
 }

@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1a882388bf9254d916abb1d067430b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timeCount: {fileID: 1744032509}
 --- !u!4 &327069594
 Transform:
   m_ObjectHideFlags: 0
@@ -922,7 +923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.6, y: 24.1}
+  m_AnchoredPosition: {x: 7.6, y: 626}
   m_SizeDelta: {x: 699.7593, y: 48.10202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1561634752
@@ -974,7 +975,7 @@ GameObject:
   - component: {fileID: 1744032510}
   - component: {fileID: 1744032509}
   m_Layer: 5
-  m_Name: Image
+  m_Name: TimeCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ChangeScene : MonoBehaviour
 {
-    float _startTime; 
-    private float _endTime = 4.0f;
+    public Image _timeCount;
+    float _currentTime = 0f;
+    private float _endTime = 30f;
 
     void Update() {
-        _startTime += Time.deltaTime;//Función para que la variable tiempo_start vaya contando segundos.
-        if (_startTime >= _endTime) //Si pasan los segundos que hemos puesto antes...
+        _currentTime += Time.deltaTime;
+        _timeCount.fillAmount = _currentTime / _endTime;
+        if (_currentTime >= _endTime) 
         {
             SceneManager.LoadScene("LoginAndRegister");
         }
